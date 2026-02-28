@@ -3,10 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Yoga</title>
+
+     <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- icon -->
+     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
-    
+    <!-- Header Content -->
+     
+    <nav class="navbar">
+         <!-- Logo -->
+        <a href="#"class="navbar-logo">Y<span>P</span></a>
+        
+        <!-- Navigation Menu -->
+        <div class="navbar-nav">
+            <a href="#home-page">Home</a>
+            <a href="#about-me">Our Profile</a>
+            <a href="#portfolio-page">Portfolio</a>
+            <a href="#message-us-page">Message Us</a>
+        </div>
+    </nav>
+
+    <hr>
+    <!-- Main Content -->
+     <!-- Hero Section -->
+        <section class="hero">
+        <div class="content">
+            <div class="left">
+            <h1>Welcome - You're in the Right Place</h1>
+             <p>Thank You for visiting my page. Please log in to acces my portofolio and explore my best work.
+             </p>
+            </div>
+        </div>
+            <div class="right">
+                <form id="loginForm">
+                    <h2><b>Login Here</b></h2>
+                    <input type="text" id="nama" placeholder="Enter Name Here" required>
+                    <input type="email" id="emaillogin" placeholder="Enter Email Here" required>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+             </div>
+        </div>
+        </section>
+        <!-- Home Page -->
+    <section class="home" id="home-page">
+     <div class="home-content">
+        <h1 id="welcomeText">Welcome 👋</h1>
+        <p>
+            Thank you for taking the time to explore my portfolio.
+            Here you will discover my best works, creativity,
+            and professional journey in digital development.
+        </p>
+     </div>
+    </section>
+
+         <hr>
+         <hr>
+         <!-- Our Profile Page -->
+         <section class="about-me" id="about-me">
+           <div class="wrapper">
+                <h1>About me</h1>
+                 <p class="tagline">get to know each other better</p>
+            <div>
+            <div class="foto"><img src="/fotoyoga.jpg" alt="img.1"></div>
+            <div class="info">
+
+                <h2>Yoga Putranto</h2>
+                <p class="role">Quality Assurance</p>
+                
+                <p class="description">
+                    I work as a quality assurance in a company, and I am currently studying software engineering.
+                </p>
+                <div class="details">
+                    <p><strong>City:</strong> Cikarang</p>
+                    <p><strong>Education:</strong> D3</p>
+                    <p><strong>Work experience:</strong> Quality Assurance (until now)</p>
+                </div>
+            </div>
+            </div>
+            </div>
+         </section>
+         <br><br><br><br><br>
+
+
+         <hr>
+
+         <!-- Portfolio Page -->
+         <section class="portfolio-page" id="portfolio-page">
+            <div class="portfolio">
+            <h1>Portfolio</h1>
+            <br>
+            <p class="mt-2">Sorry, I'm just learning and don't have any experience as a software engineer.</p>
+            </div>
+         </section>
+
+         <hr>
+
+         <!-- Message Us Page -->
+          
+    <section class="messageus"          id="message-us-page">
+        <h1><b>Message Us</b></h1>
+
+        <div class="message">
+
+        <!--FORM -->
+        <div class="form-area">
+            <form id="messageForm">
+                
+                <div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" id="name" placeholder="Nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Tanggal Lahir</label>
+                    <input type="date" id="tanggal" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Laki - Laki" required> Laki-Laki</label>
+                        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-group textarea-group">
+                    <label>Pesan</label>
+                    <textarea id="pesan" placeholder="Pesan" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- OUTPUT -->
+        <div class="output-area" id="outputBox">
+            <p><strong>Current time:</strong> -</p>
+            <p>Nama : -</p>
+            <p>Tanggal Lahir : -</p>
+            <p>Jenis Kelamin : -</p>
+            <p>Pesan : -</p>
+        </div>
+
+        </div>
+    </div>
+    </section>
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center p-4 bg-gray-200">© 2026 Yoga Portfolio. All rights reserved.</p>
+    </footer>
+    <!-- icon -->
+      <script>
+      feather.replace();
+    </script>
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+
+
 </body>
 </html>
